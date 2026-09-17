@@ -1,12 +1,12 @@
-﻿# GrodkĂłw Water Tower â€” UAV Photogrammetry & 3D Reconstruction
+# Grodków Water Tower — UAV Photogrammetry & 3D Reconstruction
 
 A 3D-first UAV photogrammetry case study focused on **image QA, capture geometry, reconstruction quality, model comparison and final presentation**.
 
 The project uses two separate DJI Mini 4K acquisitions of the same water tower:
 
-- **Model A â€” Sunny** â€” strong directional sunlight, high redundancy and pronounced shadows.
-- **Model B â€” Overcast** â€” more diffuse lighting, revised capture geometry and fewer images.
-- **Model C â€” Combined Curated** â€” all approved Overcast images plus a spatially selected subset of Sunny images.
+- **Model A — Sunny** — strong directional sunlight, high redundancy and pronounced shadows.
+- **Model B — Overcast** — more diffuse lighting, revised capture geometry and fewer images.
+- **Model C — Combined Curated** — all approved Overcast images plus a spatially selected subset of Sunny images.
 
 The aim was not simply to produce a visually attractive model. I wanted to understand **how lighting, capture geometry, image selection and redundancy affect the final 3D reconstruction**.
 
@@ -16,9 +16,9 @@ The aim was not simply to produce a visually attractive model. I wanted to under
 
 ## Final Result
 
-![Final oblique view of the cleaned GrodkĂłw Water Tower model](README_assets/figures/final_model_oblique.png)
+![Final oblique view of the cleaned Grodków Water Tower model](README_assets/figures/final_model_oblique.png)
 
-The final presentation model is based on **Model B â€” Overcast**, which provided the best overall balance of reconstruction completeness, consistent texture and processing efficiency.
+The final presentation model is based on **Model B — Overcast**, which provided the best overall balance of reconstruction completeness, consistent texture and processing efficiency.
 
 Model A and Model C were retained as comparison assets rather than discarded.
 
@@ -33,15 +33,15 @@ Model A and Model C were retained as comparison assets rather than discarded.
 | Item | Result |
 |---|---|
 | UAV platform | DJI Mini 4K |
-| Acquisition 01 | Sunny â€” 24 Aug 2026 |
-| Acquisition 02 | Overcast â€” 25 Aug 2026 |
+| Acquisition 01 | Sunny — 24 Aug 2026 |
+| Acquisition 02 | Overcast — 25 Aug 2026 |
 | Model A input | 442 QA-approved images |
 | Model B input | 283 QA-approved images |
 | Model C input | 403 images: 283 Overcast + 120 curated Sunny |
 | Model A dense cloud | 33.69 million points |
 | Model B dense cloud | 28.77 million points |
 | Model C dense cloud | 38.83 million points |
-| Final technical baseline | Model B â€” Overcast |
+| Final technical baseline | Model B — Overcast |
 | Main software | WebODM, QGIS, CloudCompare, Blender, Python, ExifTool |
 | Final presentation | Cleaned textured model + two vertical animations |
 | Mission documentation | Acquisition 01 as-flown record + Acquisition 02 revised mission plan |
@@ -52,25 +52,25 @@ Model A and Model C were retained as comparison assets rather than discarded.
 
 ```text
 UAV Capture
-   â†“
+   ↓
 EXIF / Metadata Audit
-   â†“
+   ↓
 Automated Image QA
-   â†“
+   ↓
 Manual KEEP / REJECT Review
-   â†“
+   ↓
 Capture Geometry QA
-   â†“
+   ↓
 WebODM 3D Reconstruction
-   â†“
+   ↓
 CloudCompare QA
-   â†“
+   ↓
 A / B / C Comparison
-   â†“
+   ↓
 Final Model Selection
-   â†“
+   ↓
 Blender Cleanup & Presentation
-   â†“
+   ↓
 Final Animations / Portfolio Output
 ```
 
@@ -81,7 +81,7 @@ Final Animations / Portfolio Output
 
 Two separate acquisitions were completed on consecutive days.
 
-### Acquisition 01 â€” Sunny
+### Acquisition 01 — Sunny
 
 - 446 original JPG images
 - strong direct sunlight
@@ -89,7 +89,7 @@ Two separate acquisitions were completed on consecutive days.
 - high redundancy and dense multi-view coverage
 - 442 images retained after QA
 
-### Acquisition 02 â€” Overcast
+### Acquisition 02 — Overcast
 
 - 285 original JPG images
 - diffuse overcast lighting
@@ -116,8 +116,8 @@ The second mission card is a **revised mission plan** created after lessons from
 
 ### Mission documents
 
-- [Acquisition 01 â€” Mission Card / As-Flown Record](docs/mission_planning/Grodkow_Water_Tower_Mission_Card_v1_FINAL.pdf)
-- [Acquisition 02 â€” Revised Mission Plan](docs/mission_planning/Grodkow_Water_Tower_Mission_Card_v2_Revised_Plan.pdf)
+- [Acquisition 01 — Mission Card / As-Flown Record](docs/mission_planning/Grodkow_Water_Tower_Mission_Card_v1_FINAL.pdf)
+- [Acquisition 02 — Revised Mission Plan](docs/mission_planning/Grodkow_Water_Tower_Mission_Card_v2_Revised_Plan.pdf)
 
 ---
 
@@ -181,7 +181,7 @@ This step helped identify whether a weakness in the final model was more likely 
 
 ---
 
-# 5. Model A â€” Sunny
+# 5. Model A — Sunny
 
 Model A was reconstructed independently from **442 QA-approved Sunny images**.
 
@@ -207,7 +207,7 @@ Model A was **not selected as the final presentation baseline**, but it remained
 
 ---
 
-# 6. Model B â€” Overcast
+# 6. Model B — Overcast
 
 Model B was reconstructed independently from **283 QA-approved Overcast images**.
 
@@ -279,7 +279,7 @@ This value describes the **relative registration between the two reconstructions
 
 One of the clearest differences was visible on the shadow side.
 
-| Model A â€” Sunny | Model B â€” Overcast |
+| Model A — Sunny | Model B — Overcast |
 |---|---|
 | ![Sunny shadow side](README_assets/screenshots/82_model_a_sunny_shadow_side.png) | ![Overcast shadow side](README_assets/screenshots/83_model_b_overcast_shadow_side.png) |
 
@@ -287,7 +287,7 @@ The Sunny model preserved strong local texture contrast where lighting was favou
 
 The upper structure showed an even clearer difference:
 
-| Model A â€” Sunny | Model B â€” Overcast |
+| Model A — Sunny | Model B — Overcast |
 |---|---|
 | ![Sunny upper structure](README_assets/screenshots/84_model_a_sunny_top_section.png) | ![Overcast upper structure](README_assets/screenshots/85_model_b_overcast_top_section.png) |
 
@@ -305,14 +305,14 @@ The final result reflects the combined effect of:
 
 After ICP registration, a bidirectional Cloud-to-Cloud comparison was used to see where the two reconstructions agreed and where larger local differences remained.
 
-### Sunny â†’ Overcast
+### Sunny → Overcast
 
 - mean distance: **0.0505 m**
 - standard deviation: **0.0676 m**
 
 ![Sunny to Overcast C2C](README_assets/screenshots/88_model_a_vs_b_c2c_full_tower.png)
 
-### Overcast â†’ Sunny
+### Overcast → Sunny
 
 - mean distance: **0.0634 m**
 - standard deviation: **0.0923 m**
@@ -333,7 +333,7 @@ These values describe **relative model-to-model differences after registration**
 
 ---
 
-# 10. Model C â€” Combined Curated
+# 10. Model C — Combined Curated
 
 Model C tested whether combining both acquisition days could improve the final reconstruction.
 
@@ -392,15 +392,15 @@ For this tower, the smaller and illumination-consistent Overcast dataset provide
 
 ---
 
-# 12. Texture Comparison â€” A / B / C
+# 12. Texture Comparison — A / B / C
 
 The final decision was not made from point-cloud density alone. Texture quality was also reviewed separately.
 
 <table>
 <tr>
-<th>Model A â€” Sunny</th>
-<th>Model B â€” Overcast</th>
-<th>Model C â€” Combined Curated</th>
+<th>Model A — Sunny</th>
+<th>Model B — Overcast</th>
+<th>Model C — Combined Curated</th>
 </tr>
 <tr>
 <td><img src="README_assets/screenshots/110_model_a_texture_entrance_detail.png" alt="Model A entrance texture"></td>
@@ -425,7 +425,7 @@ Model C was technically successful, but it did not provide a decisive final-qual
 
 # 13. Final Model Selection
 
-### Selected baseline: **Model B â€” Overcast**
+### Selected baseline: **Model B — Overcast**
 
 Model B was selected for Blender cleanup because it provided the best overall balance of:
 
@@ -461,7 +461,7 @@ The work included:
 - correction of a small number of visible presentation defects
 - final camera and animation setup
 
-### Example â€” finial reconstruction
+### Example — finial reconstruction
 
 The thin roof finial was one of the least stable photogrammetric elements.
 
@@ -495,20 +495,20 @@ AI assistance was therefore used as a production tool rather than as a replaceme
 
 The project was completed with two vertical presentation videos.
 
-### Hero Animation â€” FINAL
+### Hero Animation — FINAL
 
 [▶ View Hero Animation](media/hero_animation.mp4)
 
-- 1080 Ă— 1920
+- 1080 × 1920
 - 60 fps
 - 15 seconds
 - high-angle camera
-- smooth 360Â° rotation
+- smooth 360° rotation
 - technical GIS-style background
 - grounded presentation base
 - final project branding
 
-### Reconstruction Process Animation â€” FINAL
+### Reconstruction Process Animation — FINAL
 
 [▶ View Reconstruction Process Animation](media/process_animation.mp4)
 
@@ -516,10 +516,10 @@ The process animation shows the model progressing through:
 
 ```text
 Raw Point Cloud
-â†’ Isolated Tower Point Cloud
-â†’ Coarse Cleanup Mesh
-â†’ Improved / Aligned Model
-â†’ Final Textured Model
+→ Isolated Tower Point Cloud
+→ Coarse Cleanup Mesh
+→ Improved / Aligned Model
+→ Final Textured Model
 ```
 
 The final version is 15 seconds long and ends with:
@@ -608,30 +608,30 @@ Therefore:
 
 The project produced three complete reconstruction strategies:
 
-**Model A â€” Sunny**  
+**Model A — Sunny**  
 Detailed and dense, but affected by strong illumination differences and weaker upper-structure completeness.
 
-**Model B â€” Overcast**  
+**Model B — Overcast**  
 The best overall balance of completeness, texture consistency and processing efficiency. Selected as the final technical baseline.
 
-**Model C â€” Combined Curated**  
+**Model C — Combined Curated**  
 The densest reconstruction and a successful multi-session experiment, but with substantially higher processing cost and no decisive final-quality advantage.
 
 The final workflow became:
 
 ```text
 capture
-â†’ QA
-â†’ geometry review
-â†’ independent reconstruction
-â†’ point-cloud QA
-â†’ model comparison
-â†’ evidence-based model selection
-â†’ local cleanup
-â†’ final presentation
+→ QA
+→ geometry review
+→ independent reconstruction
+→ point-cloud QA
+→ model comparison
+→ evidence-based model selection
+→ local cleanup
+→ final presentation
 ```
 
-That process â€” rather than the final render alone â€” is the main result of the case study.
+That process — rather than the final render alone — is the main result of the case study.
 
 ---
 
@@ -643,5 +643,4 @@ GIS / UAV Data Processing / Photogrammetry / 3D Reconstruction
 GitHub: [IgorH-GIS](https://github.com/IgorH-GIS)  
 LinkedIn: [Igor Hajducki](https://www.linkedin.com/in/igor-hajducki/)
 
-**DroneCube Analytics** â€” developing UAV photogrammetry, GIS and 3D data-processing workflows.
-
+**DroneCube Analytics** — developing UAV photogrammetry, GIS and 3D data-processing workflows.
