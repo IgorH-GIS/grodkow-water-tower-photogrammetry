@@ -1,0 +1,48 @@
+﻿# Python / private scripts
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.py
+*.ps1
+*.bat
+*.cmd
+*.ipynb
+
+# Private / working project folders
+00_Admin/
+01_Input/
+02_QA/
+03_WebODM/
+04_Automation/
+05_QGIS/
+06_CloudCompare/
+07_Blender/
+08_Reports/
+09_Exports/
+
+# Photogrammetry / point-cloud working data
+*.las
+*.laz
+*.ply
+*.pcd
+*.bin
+*.tif
+*.tiff
+*.dng
+
+# Blender working files
+*.blend
+*.blend1
+*.blend2
+
+# Temporary / archive files
+*.tmp
+*.log
+*.zip
+*.7z
+*.rar
+
+# OS
+Thumbs.db
+.DS_Store
