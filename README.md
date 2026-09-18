@@ -1,6 +1,6 @@
 # Grodków Water Tower — UAV Photogrammetry & 3D Reconstruction
 
-A 3D-first UAV photogrammetry case study focused on **image QA, capture geometry, reconstruction quality, model comparison and final presentation**.
+A UAV photogrammetry and 3D reconstruction case study focused on **image QA, capture geometry, reconstruction quality, model comparison and final presentation**.
 
 The project uses two separate DJI Mini 4K acquisitions of the same water tower:
 
@@ -17,6 +17,8 @@ The aim was not simply to produce a visually attractive model. I wanted to under
 ## Final Result
 
 ![Final oblique view of the cleaned Grodków Water Tower model](README_assets/figures/final_model_oblique.png)
+
+[▶ Watch the final animations](#15-final-presentation-and-animations)
 
 The final presentation model is based on **Model B — Overcast**, which provided the best overall balance of reconstruction completeness, consistent texture and processing efficiency.
 
@@ -134,8 +136,6 @@ Final status: INCLUDED / EXCLUDED
 ```
 
 This made it possible to preserve the reason why an image was flagged while keeping the final inclusion decision under manual control.
-
-The repository documents the QA approach and its results, but does not publish the private implementation used for selected processing and QA utilities.
 
 ### Example QA evidence
 
@@ -437,7 +437,7 @@ Model B was selected for Blender cleanup because it provided the best overall ba
 
 Model A remained a useful comparison and complementary dataset.
 
-Model C showed that controlled multi-session fusion was possible, but also demonstrated the extra processing cost and diminishing return from adding more imagery.
+Model C showed that images from both days could be combined successfully, but the extra images increased processing time without clearly improving the final result.
 
 ---
 
@@ -615,7 +615,7 @@ Detailed and dense, but affected by strong illumination differences and weaker u
 The best overall balance of completeness, texture consistency and processing efficiency. Selected as the final technical baseline.
 
 **Model C — Combined Curated**  
-The densest reconstruction and a successful multi-session experiment, but with substantially higher processing cost and no decisive final-quality advantage.
+The densest reconstruction, but it took much longer to process and did not clearly improve the final result.
 
 The final workflow became:
 
