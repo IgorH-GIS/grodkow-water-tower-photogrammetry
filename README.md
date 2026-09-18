@@ -497,7 +497,7 @@ The project was completed with two vertical presentation videos.
 
 ### Hero Animation — FINAL
 
-[▶ View Hero Animation](media/hero_animation.mp4)
+https://github.com/user-attachments/assets/e17b433c-944d-4354-90fc-fd2c74a309f4
 
 - 1080 × 1920
 - 60 fps
@@ -510,7 +510,7 @@ The project was completed with two vertical presentation videos.
 
 ### Reconstruction Process Animation — FINAL
 
-[▶ View Reconstruction Process Animation](media/process_animation.mp4)
+https://github.com/user-attachments/assets/ac529bfd-5558-4975-b354-5683b83c29d4
 
 The process animation shows the model progressing through:
 
