@@ -349,21 +349,31 @@ The Sunny subset was selected using altitude / azimuth coverage and spatial QA.
 
 ![Model C dataset validation](README_assets/screenshots/96_model_c_final_dataset_validation.png)
 
-### Processing-resource test
+### Processing adjustment
 
-The first Model C run failed after about 29 minutes because the available memory was not sufficient.
+The larger combined dataset required a more conservative WebODM processing setup.
 
-A controlled retry changed only the resource profile:
+Processing concurrency was reduced while the quality-related reconstruction settings were kept unchanged.
 
-- WSL RAM: 24 GB
-- swap: increased from 12 GB to 20 GB
-- `max-concurrency`: reduced from 3 to 2
+The reconstruction then completed successfully.
 
-The quality-related reconstruction settings were left unchanged.
+Model C produced:
 
-![Model C successful retry](README_assets/screenshots/99_model_c_retry02_completed.png)
+- **38,832,056 dense points**
+- 397 / 403 reconstructed images
+- average GSD: **0.91 cm**
+- processing time: **3:45:54**
 
-The retry completed successfully.
+![Model C isolated tower](README_assets/screenshots/126_model_c_isolated_tower_front.png)
+
+Model C produced:
+
+- **38,832,056 dense points**
+- 397 / 403 reconstructed images
+- average GSD: **0.91 cm**
+- processing time: **3:45:54**
+
+![Model C isolated tower](README_assets/screenshots/126_model_c_isolated_tower_front.png)
 
 Model C produced:
 
